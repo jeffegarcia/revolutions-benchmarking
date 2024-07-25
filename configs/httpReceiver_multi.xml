@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template productVersion="11.3.0">
+    <geoEventServices/>
+    <inputs>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-02" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-02" name="414f2538-9b18-4b5f-8ad4-d141db84aa74" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-05" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-05" name="2b355795-2d77-426b-8adc-2b39536941c9" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-03" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-03" name="e3758684-c5a6-41fa-8003-41ed060dba27" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-08" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-08" name="32e4982d-45a0-43d5-8c22-00364b059cc5" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-04" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-04" name="1b80319b-f727-4dd5-827a-5a7d33da5a2d" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-09" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-09" name="ca448bda-ee78-4ade-83ca-95cf5dc28ee0" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-10" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-10" name="1fd98b03-b1d8-47e7-8749-0d3267e379c2" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-06" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-06" name="540ee73b-6c1f-46d6-8714-6a3ee98df945" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-01" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-01" name="065d5931-be19-444c-8862-5ba047e5af23" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+        <input url="https://geoevent-neo-linux.esrirealtimegis.com:6143/geoevent/rest/receiver/rest-geojson-in-07" clusterCommand="START" connector="esri-receive-geojson-rest-in" connectorLabel="Receive GeoJSON on a REST Endpoint" label="rest-geojson-in-07" name="1f116fa3-e92d-403f-8988-7e9f9db6399a" runningState="STARTED" statusDetails="NULL" supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String">4326</property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">test</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">application/json</property>
+                    <property name="clientURL" type="String"></property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String"></property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">5</property>
+                    <property name="mode" type="String">SERVER</property>
+                    <property name="honorLastModified" type="Boolean">true</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+    </inputs>
+    <outputs/>
+    <geoEventDefinitions>
+        <geoEventDefinition guid="40ebc8cd-62d3-4f40-86f9-009b9a9b18e9" name="points-delimitted-auto" owner="auto-generated/com.esri.ges.adapter.inbound.Text/11.3.0" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="Field1" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field2" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field3" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field4" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field5" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field6" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field7" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field8" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field9" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field10" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field11" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field12" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field13" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field14" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field15" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field16" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Field17" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="Geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="59cd4d06-05aa-4920-8a7d-b49751b7e6a6" name="points-delimitted" owner="siteadmin" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Integer" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TRACK_ID</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Date" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TIME_START</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Date" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TIME_END</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="lonX" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="latY" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="altZ" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="b7298faf-720d-4ca6-a046-ed04c3731554" name="points-geojson-auto" owner="auto-generated/com.esri.ges.adapter.inbound.GeoJSON/11.3.0" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="8f877608-fff5-44af-a387-7a0a5ed416f5" name="points-geojson-ws-auto" owner="auto-generated/com.esri.ges.adapter.inbound.GeoJSON/11.3.0" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="6b5cbb76-fb58-40f0-88e2-f5239b745bda" name="points-geojson" owner="siteadmin" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="665bca66-41c8-4b62-ad8c-eb5de15ccd54" name="points" owner="siteadmin" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Integer" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TRACK_ID</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Date" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TIME_START</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Date" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>TIME_END</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+        <geoEventDefinition guid="fa0840ef-38ee-4995-8b1d-35ad2378ffa0" name="test" owner="auto-generated/com.esri.ges.adapter.inbound.GeoJSON/11.3.0" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+    </geoEventDefinitions>
+    <tags/>
+    <connectors>
+        <connector accessType="editable" label="tcp-geojson-in" name="tcp-geojson-in" type="inbound">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0"/>
+            <defaultName>tcp-geojson-in</defaultName>
+            <description>Description for connector</description>
+            <properties>
+                <advanced/>
+                <hidden/>
+                <shown>
+                    <property label="GeoEvent Definition Name (Existing)" name="ExistingGeoEventDefinitionName" source="adapter"/>
+                    <property default="Generated-GeoEventDefinition" label="GeoEvent Definition Name (New)" name="NewGeoEventDefinitionName" source="adapter"/>
+                    <property default="true" label="Create GeoEvent Definition" name="CreateGeoEventDefinition" source="adapter"/>
+                    <property label="Expected Date Format" name="CustomDateFormat" source="adapter"/>
+                    <property label="Default Spatial Reference" name="SpatialReferenceField" source="adapter"/>
+                    <property default="5565" label="Server Port" name="port" source="transport"/>
+                    <property default="SERVER" label="Mode" name="mode" source="transport"/>
+                    <property default="localhost" label="Host (Client Mode)" name="host" source="transport"/>
+                    <property default="60" label="Connection Timeout (Client Mode)" name="clientConnectionTimeout" source="transport"/>
+                    <property label="Handshake Text" name="handshake" source="transport"/>
+                    <property default="true" label="Use Escape Characters in Handshake Text" name="useEscapeCharactersInHandshake" source="transport"/>
+                </shown>
+            </properties>
+            <transport uri="com.esri.ges.transport.inbound/TCP/11.3.0"/>
+        </connector>
+        <connector accessType="editable" label="neo-http-geojson-in" name="neo-http-geojson-in" type="inbound">
+            <adapter uri="com.esri.ges.adapter.inbound/Generic-JSON/11.3.0"/>
+            <defaultName>neo-http-geojson-in</defaultName>
+            <description>Description for connector</description>
+            <properties>
+                <advanced/>
+                <hidden/>
+                <shown>
+                    <property label="JSON Object Name" name="JsonObjectName" source="adapter"/>
+                    <property default="true" label="Create GeoEvent Definition" name="CreateGeoEventDefinition" source="adapter"/>
+                    <property label="GeoEvent Definition Name (Existing)" name="ExistingGeoEventDefinitionName" source="adapter"/>
+                    <property default="NewFeatureGeoEventDef" label="GeoEvent Definition Name (New)" name="NewGeoEventDefinitionName" source="adapter"/>
+                    <property label="Expected Date Format" name="CustomDateFormat" source="adapter"/>
+                    <property default="false" label="Construct Geometry from Fields" name="BuildGeometryFromFields" source="adapter"/>
+                    <property label="X Geometry Field" name="XGeometryField" source="adapter"/>
+                    <property label="Y Geometry Field" name="YGeometryField" source="adapter"/>
+                    <property label="Z Geometry Field" name="ZGeometryField" source="adapter"/>
+                    <property label="Default Spatial Reference" name="SpatialReferenceField" source="adapter"/>
+                    <property default="false" label="Learning Mode" name="isLearningMode" source="adapter"/>
+                    <property default="false" label="As GeoJSON" name="asGeoJson" source="adapter"/>
+                    <property default="CLIENT" label="Mode" name="mode" source="transport"/>
+                    <property label="Acceptable MIME Types (Server Mode)" name="acceptableMimeTypesServerMode" source="transport"/>
+                    <property label="URL" name="clientURL" source="transport"/>
+                    <property default="false" label="Use URL Proxy" name="useClientURLProxy" source="transport"/>
+                    <property label="URL Proxy" name="clientURLProxy" source="transport"/>
+                    <property label="Parameters" name="clientParameters" source="transport"/>
+                    <property default="GET" label="HTTP Method" name="httpMethod" source="transport"/>
+                    <property default="TEXT" label="Post/Put From" name="clientPostFrom" source="transport"/>
+                    <property default="name:value" label="Post/Put Parameters" name="clientPostParameters" source="transport"/>
+                    <property label="Content Body" name="clientPostBody" source="transport"/>
+                    <property label="Post/Put body MIME Type" name="postContentType" source="transport"/>
+                    <property default="name:value" label="Header Parameter Name:Value List" name="headers" source="transport"/>
+                    <property label="Acceptable MIME Types (Client Mode)" name="acceptableMimeTypesClientMode" source="transport"/>
+                    <property default="false" label="Use Long Polling" name="useLongPolling" source="transport"/>
+                    <property default="5" label="Frequency (in seconds)" name="frequency" source="transport"/>
+                    <property default="true" label="Receive New Data Only" name="honorLastModified" source="transport"/>
+                    <property default="30" label="HTTP Timeout (in seconds)" name="httpTimeoutValue" source="transport"/>
+                    <property label="Append to the End of Payload" name="httpAppendToEnd" source="transport"/>
+                    <property default="true" label="Get Request Contains Raw Data" name="getRequestIncludesRaw" source="transport"/>
+                    <property label="Parameter Name for the Raw Data" name="getRequestRawDataFieldName" source="transport"/>
+                </shown>
+            </properties>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0"/>
+        </connector>
+        <connector accessType="editable" label="tcp-delimitted-in" name="tcp-delimitted-in" type="inbound">
+            <adapter uri="com.esri.ges.adapter.inbound/Text/11.3.0"/>
+            <defaultName>tcp-delimitted-in</defaultName>
+            <description>Description for connector</description>
+            <properties>
+                <advanced/>
+                <hidden/>
+                <shown>
+                    <property default="false" label="Create Unrecognized Event Definitions" name="CreateUnrecognizedGeoEventDefinitions" source="adapter"/>
+                    <property default="\n" label="Event Separator" name="MessageSeparator" source="adapter"/>
+                    <property default="," label="Field Separator" name="AttributeSeparator" source="adapter"/>
+                    <property default="true" label="Incoming Data Contains GeoEvent Definition" name="IncomingDataContainsGeoEventDefinition" source="adapter"/>
+                    <property default="false" label="Create GeoEvent Definition" name="CreateFixedGeoEventDefinitions" source="adapter"/>
+                    <property label="GeoEvent Definition Name (New)" name="NewFixedGeoEventDefinitionName" source="adapter"/>
+                    <property label="GeoEvent Definition Name (Existing)" name="ExistingFixedGeoEventDefinitionName" source="adapter"/>
+                    <property default="false" label="Construct Geometry from Fields" name="BuildGeometryFromFields" source="adapter"/>
+                    <property label="X Geometry Field" name="XGeometryField" source="adapter"/>
+                    <property label="Y Geometry Field" name="YGeometryField" source="adapter"/>
+                    <property label="Z Geometry Field" name="ZGeometryField" source="adapter"/>
+                    <property label="Default Spatial Reference" name="SpatialReferenceField" source="adapter"/>
+                    <property label="Expected Date Format" name="CustomDateFormat" source="adapter"/>
+                    <property label="Language for Number Formatting" name="LocaleForNumberFormatter" source="adapter"/>
+                    <property default="5565" label="Server Port" name="port" source="transport"/>
+                    <property default="SERVER" label="Mode" name="mode" source="transport"/>
+                    <property default="localhost" label="Host (Client Mode)" name="host" source="transport"/>
+                    <property default="60" label="Connection Timeout (Client Mode)" name="clientConnectionTimeout" source="transport"/>
+                    <property label="Handshake Text" name="handshake" source="transport"/>
+                    <property default="true" label="Use Escape Characters in Handshake Text" name="useEscapeCharactersInHandshake" source="transport"/>
+                </shown>
+            </properties>
+            <transport uri="com.esri.ges.transport.inbound/TCP/11.3.0"/>
+        </connector>
+    </connectors>
+</template>

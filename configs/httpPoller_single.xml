@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template productVersion="11.3.0">
+    <geoEventServices/>
+    <inputs>
+        <input clusterCommand="START" connector="esri-external-geojson-poll" connectorLabel="Poll an External Website for GeoJSON" hostName="ip-172-31-37-139.us-west-2.compute.internal" label="geojson-poll-in" name="5edc4a53-c39f-46da-83cf-46bdadd89d5b" runningState="ERROR" statusDetails="Failed to get a response from http://54.189.52.221:3005/geojson_points." supportsAllGeoEventDefinitions="true">
+            <adapter uri="com.esri.ges.adapter.inbound/GeoJSON/11.3.0">
+                <properties>
+                    <property name="SpatialReferenceField" type="String"></property>
+                    <property name="CreateGeoEventDefinition" type="Boolean">false</property>
+                    <property name="ExistingGeoEventDefinitionName" type="GeoEventDefinition">points-geojson</property>
+                    <property name="CustomDateFormat" type="String"></property>
+                    <property name="NewGeoEventDefinitionName" type="String">NewFeatureGeoEventDef</property>
+                </properties>
+            </adapter>
+            <geoEventDefinitionHistory/>
+            <geoEventsRateRange max="0.0" min="0.0"/>
+            <supportedGeoEventDefinitions/>
+            <transport uri="com.esri.ges.transport.inbound/HTTP/11.3.0">
+                <properties>
+                    <property name="headers" type="String"></property>
+                    <property name="getRequestRawDataFieldName" type="String"></property>
+                    <property name="acceptableMimeTypesServerMode" type="String">text/json,application/json</property>
+                    <property name="clientURL" type="String">http://54.189.52.221:3005/geojson_points</property>
+                    <property name="httpAppendToEnd" type="String"></property>
+                    <property name="clientPostBody" type="String"></property>
+                    <property name="postContentType" type="String"></property>
+                    <property name="acceptableMimeTypesClientMode" type="String">application/json</property>
+                    <property name="httpMethod" type="String">GET</property>
+                    <property name="httpTimeoutValue" type="Integer">30</property>
+                    <property name="useLongPolling" type="Boolean">false</property>
+                    <property name="clientURLProxy" type="String"></property>
+                    <property name="frequency" type="Integer">1</property>
+                    <property name="mode" type="String">CLIENT</property>
+                    <property name="honorLastModified" type="Boolean">false</property>
+                    <property name="clientPostFrom" type="String">TEXT</property>
+                    <property name="clientPostParameters" type="String"></property>
+                    <property name="useClientURLProxy" type="Boolean">false</property>
+                    <property name="clientParameters" type="String"></property>
+                    <property name="getRequestIncludesRaw" type="Boolean">true</property>
+                </properties>
+            </transport>
+        </input>
+    </inputs>
+    <outputs/>
+    <geoEventDefinitions>
+        <geoEventDefinition guid="6b5cbb76-fb58-40f0-88e2-f5239b745bda" name="points-geojson" owner="siteadmin" accessType="editable">
+            <fieldDefinitions>
+                <fieldDefinition name="trackID" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="keyword" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="category" type="String" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="bool" type="Boolean" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="startTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="endTime" type="Double" cardinality="One">
+                    <fieldDefinitions/>
+                </fieldDefinition>
+                <fieldDefinition name="geometry" type="Geometry" cardinality="One">
+                    <fieldDefinitionTag>
+                        <name>GEOMETRY</name>
+                    </fieldDefinitionTag>
+                    <fieldDefinitions/>
+                </fieldDefinition>
+            </fieldDefinitions>
+        </geoEventDefinition>
+    </geoEventDefinitions>
+    <tags/>
+</template>
