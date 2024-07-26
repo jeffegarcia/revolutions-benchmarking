@@ -314,7 +314,7 @@ function checkFile() {
 
 function sendData() {
   const startTime = Date.now();
-  const options = { hostname, path, port, method: 'POST', headers: { 'Content-Type': 'application/json', }, };
+  const options = { rejectUnauthorized: false, hostname, path, port, method: 'POST', headers: { 'Content-Type': 'application/json', }, };
   const req = https.request(options, (res) => {
     var statusCode = String(res.statusCode);
     res.on('data', () => { });
