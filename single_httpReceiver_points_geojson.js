@@ -369,5 +369,5 @@ function startTest() {
   }, inputRate);
 }
 
-checkFile();
+//checkFile();
 startTest();
