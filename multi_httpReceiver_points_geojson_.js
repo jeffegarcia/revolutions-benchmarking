@@ -377,16 +377,16 @@ export function startTest() {
   var testStart = Math.floor(Date.now() / 1000);
   console.log("Test start:", new Date(), testStart);
   interval = setInterval(() => {
-    sendData(path1, logFilepath1);
-    sendData(path2, logFilepath2);
-    sendData(path3, logFilepath3);
-    sendData(path4, logFilepath4);
-    sendData(path5, logFilepath5);
-    sendData(path6, logFilepath6);
-    sendData(path7, logFilepath7);
-    sendData(path8, logFilepath8);
-    sendData(path9, logFilepath9);
-    sendData(path10, logFilepath10);
+    sendData(path1);
+    sendData(path2);
+    sendData(path3);
+    sendData(path4);
+    sendData(path5);
+    sendData(path6);
+    sendData(path7);
+    sendData(path8);
+    sendData(path9);
+    sendData(path10);
     count++;
     if (count > testDuration) {
       clearInterval(interval);
