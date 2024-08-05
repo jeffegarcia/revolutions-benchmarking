@@ -2,17 +2,28 @@ import { faker } from "@faker-js/faker";
 import * as fs from "fs";
 import express from "express";
 import minimist from "minimist"
+import nocache from "nocache";
+import http from "http";
+http.globalAgent.maxSockets = Infinity;
 
 const args = minimist(process.argv.slice(2));
-const testDuration = 20; // Duration of test in seconds. Enter 'none' if you wish to run the test indefinitely.
+const testDuration = 30; // Duration of test in seconds. Enter 'none' if you wish to run the test indefinitely.
 var tracks = args.tracks; // Feature rate / Number of unique records per request
 var locations = 50;
 var lon = -117;
 var lat = 33;
 var alt = 100;
-//const logFilepath = `/home/ec2-user/nodejs/dataGenerator/httpPoller/single/logs/httpPoller_${tracks}.csv`
-//const urlPath = `/${tracks}_points`
-const urlPath = '/geojson_points'
+const urlPath01 = '/geojson_points_01'
+const urlPath02 = '/geojson_points_02'
+const urlPath03 = '/geojson_points_03'
+const urlPath04 = '/geojson_points_04'
+const urlPath05 = '/geojson_points_05'
+const urlPath06 = '/geojson_points_06'
+const urlPath07 = '/geojson_points_07'
+const urlPath08 = '/geojson_points_08'
+const urlPath09 = '/geojson_points_09'
+const urlPath10 = '/geojson_points_10'
+const urlPaths = [urlPath01, urlPath02, urlPath03, urlPath04, urlPath05, urlPath06, urlPath07, urlPath08, urlPath09, urlPath10]
 var currentTimeEpoch = 1704067200000; // Start time: Monday, January 1, 2024 12:00:00 AM UTC
 var futureTimeEpoch = 1704067500000; // End time: Monday, January 1, 2024 12:05:00 AM UTC
 var addTime = 60000;
@@ -225,10 +236,12 @@ let categoriesCount = 0;
 let tracksCount = 0;
 let messageCount = 0;
 let locCount = 0;
+let count = 0;
 
 const app = express();
-const portNum = 3005;
-app.use(express.json())
+const portNum = 3005
+app.use(nocache());
+//app.use(express.json())
 
 function initData() {
   var addLat = 16 / tracks;
@@ -307,19 +320,13 @@ function generateData() {
   addData();
 }
 
-function checkFile() {
-  if (fs.existsSync(logFilepath)) {
-    fs.unlinkSync(logFilepath);
-  }
-}
-
 let wrappedData = {
   type: "FeatureCollection",
   features: dataPoints.slice(tracksCount, tracksCount + tracks)
 }
 let postData = JSON.stringify(wrappedData);
 
-const updateData = () => {
+function updateData() {
   if (locCount < locations) {
     wrappedData = {
       type: "FeatureCollection",
@@ -341,18 +348,45 @@ const updateData = () => {
 }
 
 function startRestServer() {
-  app.listen(portNum, () => {
-    console.log(`Example app listening at http://localhost:${portNum}`);
+  var server = app.listen(portNum);
+  server.keepAliveTimeout = 0//30 * 1000;;
+  server.headersTimeout = 35 * 1000;
+  app.get(urlPath01, async (req, res) => {
+    res.send(postData);
   });
-  app.get(urlPath, (req, res) => {
+  app.get(urlPath02, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath03, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath04, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath05, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath06, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath07, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath08, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath09, async (req, res) => {
+    res.send(postData);
+  });
+  app.get(urlPath10, async (req, res) => {
     res.send(postData);
   });
 }
 
 function startTest() {
-  let count = 0;
   var testStart = Math.floor(Date.now() / 1000);
   console.log("Test start:", new Date(), testStart);
+  updateData();
   setInterval(() => {
     updateData();
     count++
