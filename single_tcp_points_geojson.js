@@ -354,7 +354,7 @@ function startTest() {
   setInterval(() => {
     sendTcp();
     count++
-    if (count == testDuration) {
+    if (count > testDuration) {
       var testEnd = Math.floor(Date.now() / 1000);
       console.log("Test end:", new Date(), testEnd);
       process.exit(0);
