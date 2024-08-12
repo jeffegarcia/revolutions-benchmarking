@@ -4,7 +4,7 @@ import express from "express";
 import minimist from "minimist"
 
 const args = minimist(process.argv.slice(2));
-const testDuration = 20; // Duration of test in seconds. Enter 'none' if you wish to run the test indefinitely.
+const testDuration = 600; // Duration of test in seconds. Enter 'none' if you wish to run the test indefinitely.
 var tracks = args.tracks; // Feature rate / Number of unique records per request
 var locations = 50;
 var lon = -117;
@@ -225,6 +225,7 @@ let categoriesCount = 0;
 let tracksCount = 0;
 let messageCount = 0;
 let locCount = 0;
+var getCount = 0;
 
 const app = express();
 const portNum = 3005;
@@ -344,19 +345,21 @@ function startRestServer() {
   app.listen(portNum, () => {
     console.log(`Example app listening at http://localhost:${portNum}`);
   });
-  app.get(urlPath, (req, res) => {
-    res.send(postData);
-  });
 }
 
 function startTest() {
-  let count = 0;
+  app.get(urlPath, (req, res) => {
+    res.send(postData);
+    getCount++;
+    console.log(getCount);
+  });
+  let count = -1;
   var testStart = Math.floor(Date.now() / 1000);
   console.log("Test start:", new Date(), testStart);
   setInterval(() => {
     updateData();
-    count++
-    if (count == testDuration) {
+    //count++
+    if (getCount > testDuration) {
       var testEnd = Math.floor(Date.now() / 1000);
       console.log("Test end:", new Date(), testEnd);
       process.exit(0);
@@ -366,4 +369,4 @@ function startTest() {
 
 generateData();
 startRestServer();
-setTimeout(startTest, 30000);
+setTimeout(startTest, 10000);
