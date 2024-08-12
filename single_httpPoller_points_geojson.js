@@ -351,7 +351,6 @@ function startTest() {
   app.get(urlPath, (req, res) => {
     res.send(postData);
     getCount++;
-    console.log(getCount);
   });
   let count = -1;
   var testStart = Math.floor(Date.now() / 1000);
